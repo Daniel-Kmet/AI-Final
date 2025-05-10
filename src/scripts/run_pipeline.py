@@ -8,7 +8,10 @@ import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from sklearn.metrics import confusion_matrix, roc_curve, auc
+from sklearn.metrics import confusion_matrix, roc_curve, auc, roc_auc_score, classification_report
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader
 
 # Add src directory to Python path
 import sys
@@ -18,14 +21,53 @@ from src.utils.device import get_device
 from src.models.architectures.cnn_model import main as train_cnn
 from src.models.architectures.autoencoder_model import main as train_autoencoder
 from src.models.training.train_svm_classifier import main as train_svm
-from src.models.architectures.ensemble_model import EnsembleModel
-from src.models.architectures.cnn_model import CNNModel
-from src.models.architectures.autoencoder_model import Autoencoder
+from src.models.cnn import CNNModel
+from src.models.autoencoder import Autoencoder
+from src.data.dataset import FaceDataset
 
 # Add safe globals for model loading
 torch.serialization.add_safe_globals(['torch._utils._rebuild_device_tensor_from_numpy'])
 
 logger = logging.getLogger(__name__)
+
+class EnsembleModel(nn.Module):
+    """Ensemble model combining CNN, Autoencoder, and SVM predictions."""
+    def __init__(self, cnn_model, autoencoder, svm_model):
+        super().__init__()
+        self.cnn_model = cnn_model
+        self.autoencoder = autoencoder
+        self.svm_model = svm_model
+        
+        # Initialize weights for ensemble
+        self.weights = nn.Parameter(torch.ones(3) / 3)  # Equal weights initially
+    
+    def forward(self, x):
+        # Get predictions from each model
+        cnn_pred = self.cnn_model(x)
+        cnn_score = torch.sigmoid(cnn_pred)
+        
+        # Get reconstruction error from autoencoder
+        recon = self.autoencoder(x)
+        ae_error = torch.mean((x - recon) ** 2, dim=[1, 2, 3])
+        ae_score = torch.sigmoid(-ae_error)  # Convert error to score
+        
+        # Get SVM predictions
+        x_np = x.cpu().numpy()
+        x_flat = x_np.reshape(x_np.shape[0], -1)
+        svm_score = torch.tensor(self.svm_model.predict_proba(x_flat)[:, 1], device=x.device)
+        
+        # Combine predictions using learned weights
+        weights = torch.softmax(self.weights, dim=0)  # Ensure weights sum to 1
+        combined_score = (
+            weights[0] * cnn_score +
+            weights[1] * ae_score +
+            weights[2] * svm_score
+        )
+        
+        # Get final predictions
+        predictions = (combined_score > 0.5).float()
+        
+        return predictions, combined_score
 
 def setup_logging():
     """Set up logging configuration."""
@@ -237,28 +279,98 @@ def load_model_weights(model, weights_path):
         model.load_state_dict(state_dict)
     return model
 
-def main():
-    """Run the complete training and evaluation pipeline."""
-    # Create directories
-    create_directories()
-    
-    # Set device
+def train_ensemble():
+    """Train and evaluate the ensemble model."""
     device = get_device()
     
-    # Train CNN model
-    logger.info("Training CNN model...")
-    train_cnn()
+    # Load individual models
+    cnn_model = CNNModel()
+    cnn_model = load_model_weights(cnn_model, "models/best_cnn_model.pth")
+    cnn_model.to(device)
+    cnn_model.eval()
     
-    # Train autoencoder model
-    logger.info("Training autoencoder model...")
-    train_autoencoder()
+    autoencoder = Autoencoder()
+    autoencoder = load_model_weights(autoencoder, "models/best_autoencoder.pth")
+    autoencoder.to(device)
+    autoencoder.eval()
     
-    # Train SVM model
-    logger.info("Training SVM model...")
-    train_svm()
+    svm_model = joblib.load("models/svm/svm_model.pkl")
     
-    # Train and evaluate ensemble
-    logger.info("Training and evaluating ensemble model...")
+    # Create ensemble model
+    ensemble = EnsembleModel(
+        cnn_model=cnn_model,
+        autoencoder=autoencoder,
+        svm_model=svm_model
+    )
+    ensemble.to(device)
+    
+    # Load test data
+    test_dataset = FaceDataset(
+        root_dir="data/processed/test",
+        transform=None  # Add appropriate transforms if needed
+    )
+    test_loader = DataLoader(
+        test_dataset,
+        batch_size=32,
+        shuffle=False,
+        num_workers=4
+    )
+    
+    # Evaluate ensemble
+    all_predictions = []
+    all_labels = []
+    all_scores = []
+    
+    with torch.no_grad():
+        for images, labels in test_loader:
+            images = images.to(device)
+            predictions, scores = ensemble(images)
+            
+            all_predictions.extend(predictions.cpu().numpy())
+            all_labels.extend(labels.numpy())
+            all_scores.extend(scores.cpu().numpy())
+    
+    # Calculate metrics
+    auc_score = roc_auc_score(all_labels, all_scores)
+    report = classification_report(all_labels, all_predictions, output_dict=True)
+    
+    # Save ensemble metrics
+    metrics = {
+        "auc": float(auc_score),
+        "classification_report": report,
+        "weights": ensemble.weights.tolist() if hasattr(ensemble, 'weights') else None
+    }
+    
+    with open("results/ensemble_metrics.json", "w") as f:
+        json.dump(metrics, f, indent=4)
+    
+    # Save ensemble model
+    torch.save(ensemble.state_dict(), "models/ensemble_model.pth")
+    
+    return metrics
+
+def main():
+    # """Run the complete training and evaluation pipeline."""
+    # # Create directories
+    # create_directories()
+    
+    # # Set device
+    # device = get_device()
+    
+    # # Train CNN model
+    # logger.info("Training CNN model...")
+    # train_cnn()
+    
+    # # Train autoencoder model
+    # logger.info("Training autoencoder model...")
+    # train_autoencoder()
+    
+    # # Train SVM model
+    # logger.info("Training SVM model...")
+    # train_svm()
+    
+    # # Train and evaluate ensemble
+    # logger.info("Training and evaluating ensemble model...")
 
     ensemble_metrics = train_ensemble()
     
