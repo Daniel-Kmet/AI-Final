@@ -1,0 +1,11 @@
+2025-05-08 23:48:10,862 - INFO - Setting up project directories...
+2025-05-08 23:48:10,864 - INFO - Created directory: data/raw
+2025-05-08 23:48:10,864 - INFO - Created directory: data/processed
+2025-05-08 23:48:10,865 - INFO - Created directory: data/processed/real
+2025-05-08 23:48:10,865 - INFO - Created directory: data/processed/fake
+2025-05-08 23:48:10,865 - INFO - Created directory: models
+2025-05-08 23:48:10,866 - INFO - Created directory: logs
+2025-05-08 23:48:10,866 - INFO - Created directory: results
+2025-05-08 23:48:10,866 - INFO - Organizing dataset...
+2025-05-08 23:48:10,867 - ERROR - Error organizing dataset: No module named 'organize_dataset'
+2025-05-08 23:48:10,867 - ERROR - Project pipeline failed: No module named 'organize_dataset'

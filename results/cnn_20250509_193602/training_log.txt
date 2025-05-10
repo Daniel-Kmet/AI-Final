@@ -1,0 +1,31 @@
+2025-05-09 19:36:02,711 - INFO - Saved hyperparameters to results\cnn_20250509_193602/hyperparameters.json
+2025-05-09 19:38:49,626 - INFO - Epoch 1:
+2025-05-09 19:38:49,626 - INFO -   Train Loss: 0.2236, Train Accuracy: 0.9594
+2025-05-09 19:38:49,626 - INFO -   Val Loss: 0.0509, Val Accuracy: 0.9844
+2025-05-09 19:41:48,672 - INFO - Epoch 2:
+2025-05-09 19:41:48,672 - INFO -   Train Loss: 0.0751, Train Accuracy: 0.9837
+2025-05-09 19:41:48,673 - INFO -   Val Loss: 0.0549, Val Accuracy: 0.9851
+2025-05-09 19:44:58,737 - INFO - Epoch 3:
+2025-05-09 19:44:58,738 - INFO -   Train Loss: 0.0552, Train Accuracy: 0.9843
+2025-05-09 19:44:58,738 - INFO -   Val Loss: 0.0554, Val Accuracy: 0.9878
+2025-05-09 19:47:43,941 - INFO - Epoch 4:
+2025-05-09 19:47:43,941 - INFO -   Train Loss: 0.0260, Train Accuracy: 0.9922
+2025-05-09 19:47:43,941 - INFO -   Val Loss: 0.0559, Val Accuracy: 0.9891
+2025-05-09 19:51:08,466 - INFO - Epoch 5:
+2025-05-09 19:51:08,466 - INFO -   Train Loss: 0.0283, Train Accuracy: 0.9915
+2025-05-09 19:51:08,466 - INFO -   Val Loss: 0.0635, Val Accuracy: 0.9776
+2025-05-09 19:53:53,359 - INFO - Epoch 6:
+2025-05-09 19:53:53,360 - INFO -   Train Loss: 0.0244, Train Accuracy: 0.9932
+2025-05-09 19:53:53,360 - INFO -   Val Loss: 0.0398, Val Accuracy: 0.9912
+2025-05-09 19:56:38,988 - INFO - Epoch 7:
+2025-05-09 19:56:38,989 - INFO -   Train Loss: 0.0465, Train Accuracy: 0.9895
+2025-05-09 19:56:38,989 - INFO -   Val Loss: 0.3506, Val Accuracy: 0.9592
+2025-05-09 19:59:42,227 - INFO - Epoch 8:
+2025-05-09 19:59:42,227 - INFO -   Train Loss: 0.0283, Train Accuracy: 0.9919
+2025-05-09 19:59:42,227 - INFO -   Val Loss: 0.0322, Val Accuracy: 0.9905
+2025-05-09 20:03:20,251 - INFO - Epoch 9:
+2025-05-09 20:03:20,251 - INFO -   Train Loss: 0.0200, Train Accuracy: 0.9932
+2025-05-09 20:03:20,251 - INFO -   Val Loss: 0.0281, Val Accuracy: 0.9939
+2025-05-09 20:06:36,486 - INFO - Epoch 10:
+2025-05-09 20:06:36,487 - INFO -   Train Loss: 0.0353, Train Accuracy: 0.9905
+2025-05-09 20:06:36,487 - INFO -   Val Loss: 0.0306, Val Accuracy: 0.9939

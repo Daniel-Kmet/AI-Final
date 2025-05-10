@@ -1,0 +1,105 @@
+2025-05-08 23:48:50,683 - INFO - Setting up project directories...
+2025-05-08 23:48:50,683 - INFO - Created directory: data/raw
+2025-05-08 23:48:50,684 - INFO - Created directory: data/processed
+2025-05-08 23:48:50,684 - INFO - Created directory: data/processed/real
+2025-05-08 23:48:50,685 - INFO - Created directory: data/processed/fake
+2025-05-08 23:48:50,685 - INFO - Created directory: models
+2025-05-08 23:48:50,685 - INFO - Created directory: logs
+2025-05-08 23:48:50,686 - INFO - Created directory: results
+2025-05-08 23:48:50,686 - INFO - Organizing dataset...
+2025-05-08 23:48:51,008 - INFO - Found 9500 images to process
+2025-05-08 23:49:40,224 - ERROR - Error processing data\raw\real\real_1549.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,225 - ERROR - Error processing data\raw\real\real_1550.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,226 - ERROR - Error processing data\raw\real\real_1551.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,226 - ERROR - Error processing data\raw\real\real_1552.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,227 - ERROR - Error processing data\raw\real\real_1553.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,228 - ERROR - Error processing data\raw\real\real_1554.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,228 - ERROR - Error processing data\raw\real\real_1555.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,229 - ERROR - Error processing data\raw\real\real_1556.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,229 - ERROR - Error processing data\raw\real\real_1557.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,230 - ERROR - Error processing data\raw\real\real_1558.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,230 - ERROR - Error processing data\raw\real\real_1559.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,231 - ERROR - Error processing data\raw\real\real_1560.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,232 - ERROR - Error processing data\raw\real\real_1561.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,232 - ERROR - Error processing data\raw\real\real_1562.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,233 - ERROR - Error processing data\raw\real\real_1563.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,234 - ERROR - Error processing data\raw\real\real_1564.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,234 - ERROR - Error processing data\raw\real\real_1565.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,235 - ERROR - Error processing data\raw\real\real_1566.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,236 - ERROR - Error processing data\raw\real\real_1567.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,236 - ERROR - Error processing data\raw\real\real_1568.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,237 - ERROR - Error processing data\raw\real\real_1569.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,238 - ERROR - Error processing data\raw\real\real_1570.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,239 - ERROR - Error processing data\raw\real\real_1571.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,240 - ERROR - Error processing data\raw\real\real_1572.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,240 - ERROR - Error processing data\raw\real\real_1573.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,241 - ERROR - Error processing data\raw\real\real_1574.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,268 - ERROR - Error processing data\raw\real\real_1575.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,271 - ERROR - Error processing data\raw\real\real_1576.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,274 - ERROR - Error processing data\raw\real\real_1577.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,277 - ERROR - Error processing data\raw\real\real_1578.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,279 - ERROR - Error processing data\raw\real\real_1579.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,282 - ERROR - Error processing data\raw\real\real_1580.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,284 - ERROR - Error processing data\raw\real\real_1581.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,287 - ERROR - Error processing data\raw\real\real_1582.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,290 - ERROR - Error processing data\raw\real\real_1583.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,293 - ERROR - Error processing data\raw\real\real_1584.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,296 - ERROR - Error processing data\raw\real\real_1585.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,299 - ERROR - Error processing data\raw\real\real_1586.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,301 - ERROR - Error processing data\raw\real\real_1587.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,304 - ERROR - Error processing data\raw\real\real_1588.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,307 - ERROR - Error processing data\raw\real\real_1589.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,311 - ERROR - Error processing data\raw\real\real_1590.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,314 - ERROR - Error processing data\raw\real\real_1591.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,317 - ERROR - Error processing data\raw\real\real_1592.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,319 - ERROR - Error processing data\raw\real\real_1593.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,322 - ERROR - Error processing data\raw\real\real_1594.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,325 - ERROR - Error processing data\raw\real\real_1595.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,327 - ERROR - Error processing data\raw\real\real_1596.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,330 - ERROR - Error processing data\raw\real\real_1597.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,333 - ERROR - Error processing data\raw\real\real_1598.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,335 - ERROR - Error processing data\raw\real\real_1599.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,339 - ERROR - Error processing data\raw\real\real_1600.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,341 - ERROR - Error processing data\raw\real\real_1601.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,343 - ERROR - Error processing data\raw\real\real_1602.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,345 - ERROR - Error processing data\raw\real\real_1603.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,348 - ERROR - Error processing data\raw\real\real_1604.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,350 - ERROR - Error processing data\raw\real\real_1605.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,352 - ERROR - Error processing data\raw\real\real_1606.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,354 - ERROR - Error processing data\raw\real\real_1607.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,356 - ERROR - Error processing data\raw\real\real_1608.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,359 - ERROR - Error processing data\raw\real\real_1609.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,361 - ERROR - Error processing data\raw\real\real_1610.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,363 - ERROR - Error processing data\raw\real\real_1611.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,366 - ERROR - Error processing data\raw\real\real_1612.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,368 - ERROR - Error processing data\raw\real\real_1613.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,370 - ERROR - Error processing data\raw\real\real_1614.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,373 - ERROR - Error processing data\raw\real\real_1615.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,375 - ERROR - Error processing data\raw\real\real_1616.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,378 - ERROR - Error processing data\raw\real\real_1617.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,380 - ERROR - Error processing data\raw\real\real_1618.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,383 - ERROR - Error processing data\raw\real\real_1619.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,385 - ERROR - Error processing data\raw\real\real_1620.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,388 - ERROR - Error processing data\raw\real\real_1621.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,390 - ERROR - Error processing data\raw\real\real_1622.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,393 - ERROR - Error processing data\raw\real\real_1623.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,395 - ERROR - Error processing data\raw\real\real_1624.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,398 - ERROR - Error processing data\raw\real\real_1625.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,400 - ERROR - Error processing data\raw\real\real_1626.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,403 - ERROR - Error processing data\raw\real\real_1627.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,404 - ERROR - Error processing data\raw\real\real_1628.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,407 - ERROR - Error processing data\raw\real\real_1629.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,409 - ERROR - Error processing data\raw\real\real_1630.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,411 - ERROR - Error processing data\raw\real\real_1631.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,415 - ERROR - Error processing data\raw\real\real_1632.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,417 - ERROR - Error processing data\raw\real\real_1633.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:40,420 - ERROR - Error processing data\raw\real\real_1634.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:45,365 - ERROR - Error processing data\raw\real\real_3686.png: [WinError 112] There is not enough space on the disk
+2025-05-08 23:49:51,508 - INFO - Organization complete:
+2025-05-08 23:49:51,508 - INFO - Real images: 0
+2025-05-08 23:49:51,508 - INFO - Fake images: 4500
+2025-05-08 23:49:51,508 - INFO - Total images: 4500
+2025-05-08 23:49:51,510 - INFO - Dataset organization completed successfully
+2025-05-08 23:49:51,510 - INFO - Preprocessing images...
+2025-05-08 23:49:51,743 - INFO - Found 7362 images to preprocess
+2025-05-08 23:49:51,743 - INFO - Preprocessing real images...

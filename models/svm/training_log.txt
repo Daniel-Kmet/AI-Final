@@ -1,0 +1,186 @@
+2025-05-08 23:05:37,225 - INFO - Loading data...
+2025-05-08 23:08:08,604 - INFO - Loading data...
+2025-05-08 23:08:08,655 - INFO - Loaded data:
+2025-05-08 23:08:08,655 - INFO -   Train: 7222 samples
+2025-05-08 23:08:08,655 - INFO -   Validation: 904 samples
+2025-05-08 23:08:08,655 - INFO -   Test: 892 samples
+2025-05-08 23:08:08,655 - INFO - Creating SVM pipeline...
+2025-05-08 23:08:08,656 - INFO - Tuning hyperparameters...
+2025-05-08 23:08:08,656 - INFO - Starting grid search...
+2025-05-08 23:08:37,324 - INFO - Grid search completed in 28.67 seconds
+2025-05-08 23:08:37,324 - INFO - Best parameters: {'svm__C': 100, 'svm__gamma': 'scale'}
+2025-05-08 23:08:37,324 - INFO - Best CV score: 0.9811
+2025-05-08 23:08:37,324 - INFO - Validating best model...
+2025-05-08 23:08:37,405 - INFO - 
+Validation Results:
+2025-05-08 23:08:37,405 - INFO -   Accuracy: 0.9447
+2025-05-08 23:08:37,406 - INFO -   Precision: 0.9481
+2025-05-08 23:08:37,406 - INFO -   Recall: 0.9481
+2025-05-08 23:08:37,406 - INFO -   F1 Score: 0.9481
+2025-05-08 23:08:37,406 - INFO -   ROC AUC: 0.9892
+2025-05-08 23:08:37,409 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       422
+        real       0.95      0.95      0.95       482
+
+    accuracy                           0.94       904
+   macro avg       0.94      0.94      0.94       904
+weighted avg       0.94      0.94      0.94       904
+
+2025-05-08 23:08:37,410 - INFO - Retraining on combined data...
+2025-05-08 23:08:37,410 - INFO - Retraining on combined data: 8126 samples
+2025-05-08 23:08:39,900 - INFO - Evaluating on test set...
+2025-05-08 23:08:39,992 - INFO - 
+Test Results:
+2025-05-08 23:08:39,992 - INFO -   Accuracy: 0.9417
+2025-05-08 23:08:39,993 - INFO -   Precision: 0.9454
+2025-05-08 23:08:39,993 - INFO -   Recall: 0.9454
+2025-05-08 23:08:39,993 - INFO -   F1 Score: 0.9454
+2025-05-08 23:08:39,993 - INFO -   ROC AUC: 0.9849
+2025-05-08 23:08:39,996 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       416
+        real       0.95      0.95      0.95       476
+
+    accuracy                           0.94       892
+   macro avg       0.94      0.94      0.94       892
+weighted avg       0.94      0.94      0.94       892
+
+2025-05-08 23:08:39,996 - INFO - 
+Confusion Matrix:
+2025-05-08 23:08:39,996 - INFO - [[390  26]
+ [ 26 450]]
+2025-05-08 23:08:41,090 - INFO - Saving final model...
+2025-05-08 23:08:41,092 - INFO - Done!
+2025-05-09 22:38:57,705 - INFO - Loading data...
+2025-05-09 22:38:57,717 - INFO - Loaded data:
+2025-05-09 22:38:57,717 - INFO -   Train: 7222 samples
+2025-05-09 22:38:57,717 - INFO -   Validation: 904 samples
+2025-05-09 22:38:57,717 - INFO -   Test: 892 samples
+2025-05-09 22:38:57,717 - INFO - Creating SVM pipeline...
+2025-05-09 22:38:57,717 - INFO - Tuning hyperparameters...
+2025-05-09 22:38:57,718 - INFO - Starting grid search...
+2025-05-09 22:39:11,951 - INFO - Loading data...
+2025-05-09 22:39:11,953 - INFO - Loaded data:
+2025-05-09 22:39:11,953 - INFO -   Train: 7222 samples
+2025-05-09 22:39:11,953 - INFO -   Validation: 904 samples
+2025-05-09 22:39:11,953 - INFO -   Test: 892 samples
+2025-05-09 22:39:11,953 - INFO - Creating SVM pipeline...
+2025-05-09 22:39:11,954 - INFO - Tuning hyperparameters...
+2025-05-09 22:39:11,954 - INFO - Starting grid search...
+2025-05-09 22:39:36,596 - INFO - Grid search completed in 24.64 seconds
+2025-05-09 22:39:36,597 - INFO - Best parameters: {'svm__C': 100, 'svm__gamma': 'scale'}
+2025-05-09 22:39:36,597 - INFO - Best CV score: 0.9811
+2025-05-09 22:39:36,597 - INFO - Validating best model...
+2025-05-09 22:39:36,674 - INFO - 
+Validation Results:
+2025-05-09 22:39:36,674 - INFO -   Accuracy: 0.9447
+2025-05-09 22:39:36,674 - INFO -   Precision: 0.9481
+2025-05-09 22:39:36,674 - INFO -   Recall: 0.9481
+2025-05-09 22:39:36,675 - INFO -   F1 Score: 0.9481
+2025-05-09 22:39:36,675 - INFO -   ROC AUC: 0.9892
+2025-05-09 22:39:36,678 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       422
+        real       0.95      0.95      0.95       482
+
+    accuracy                           0.94       904
+   macro avg       0.94      0.94      0.94       904
+weighted avg       0.94      0.94      0.94       904
+
+2025-05-09 22:39:36,678 - INFO - Retraining on combined data...
+2025-05-09 22:39:36,678 - INFO - Retraining on combined data: 8126 samples
+2025-05-09 22:39:39,017 - INFO - Evaluating on test set...
+2025-05-09 22:39:39,100 - INFO - 
+Test Results:
+2025-05-09 22:39:39,101 - INFO -   Accuracy: 0.9417
+2025-05-09 22:39:39,101 - INFO -   Precision: 0.9454
+2025-05-09 22:39:39,101 - INFO -   Recall: 0.9454
+2025-05-09 22:39:39,101 - INFO -   F1 Score: 0.9454
+2025-05-09 22:39:39,101 - INFO -   ROC AUC: 0.9849
+2025-05-09 22:39:39,104 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       416
+        real       0.95      0.95      0.95       476
+
+    accuracy                           0.94       892
+   macro avg       0.94      0.94      0.94       892
+weighted avg       0.94      0.94      0.94       892
+
+2025-05-09 22:39:39,105 - INFO - 
+Confusion Matrix:
+2025-05-09 22:39:39,105 - INFO - [[390  26]
+ [ 26 450]]
+2025-05-09 22:39:39,451 - INFO - Saving final model...
+2025-05-09 22:39:39,453 - INFO - Done!
+2025-05-09 22:39:39,453 - INFO - SVM model training completed
+2025-05-09 22:40:42,402 - INFO - Loading data...
+2025-05-09 22:40:42,404 - INFO - Loaded data:
+2025-05-09 22:40:42,404 - INFO -   Train: 7222 samples
+2025-05-09 22:40:42,404 - INFO -   Validation: 904 samples
+2025-05-09 22:40:42,404 - INFO -   Test: 892 samples
+2025-05-09 22:40:42,404 - INFO - Creating SVM pipeline...
+2025-05-09 22:40:42,404 - INFO - Tuning hyperparameters...
+2025-05-09 22:40:42,404 - INFO - Starting grid search...
+2025-05-09 22:41:06,441 - INFO - Grid search completed in 24.04 seconds
+2025-05-09 22:41:06,441 - INFO - Best parameters: {'svm__C': 100, 'svm__gamma': 'scale'}
+2025-05-09 22:41:06,441 - INFO - Best CV score: 0.9811
+2025-05-09 22:41:06,441 - INFO - Validating best model...
+2025-05-09 22:41:06,519 - INFO - 
+Validation Results:
+2025-05-09 22:41:06,519 - INFO -   Accuracy: 0.9447
+2025-05-09 22:41:06,520 - INFO -   Precision: 0.9481
+2025-05-09 22:41:06,520 - INFO -   Recall: 0.9481
+2025-05-09 22:41:06,520 - INFO -   F1 Score: 0.9481
+2025-05-09 22:41:06,520 - INFO -   ROC AUC: 0.9892
+2025-05-09 22:41:06,523 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       422
+        real       0.95      0.95      0.95       482
+
+    accuracy                           0.94       904
+   macro avg       0.94      0.94      0.94       904
+weighted avg       0.94      0.94      0.94       904
+
+2025-05-09 22:41:06,523 - INFO - Retraining on combined data...
+2025-05-09 22:41:06,523 - INFO - Retraining on combined data: 8126 samples
+2025-05-09 22:41:08,814 - INFO - Evaluating on test set...
+2025-05-09 22:41:08,897 - INFO - 
+Test Results:
+2025-05-09 22:41:08,898 - INFO -   Accuracy: 0.9417
+2025-05-09 22:41:08,898 - INFO -   Precision: 0.9454
+2025-05-09 22:41:08,898 - INFO -   Recall: 0.9454
+2025-05-09 22:41:08,898 - INFO -   F1 Score: 0.9454
+2025-05-09 22:41:08,898 - INFO -   ROC AUC: 0.9849
+2025-05-09 22:41:08,901 - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+        fake       0.94      0.94      0.94       416
+        real       0.95      0.95      0.95       476
+
+    accuracy                           0.94       892
+   macro avg       0.94      0.94      0.94       892
+weighted avg       0.94      0.94      0.94       892
+
+2025-05-09 22:41:08,901 - INFO - 
+Confusion Matrix:
+2025-05-09 22:41:08,901 - INFO - [[390  26]
+ [ 26 450]]
+2025-05-09 22:41:09,242 - INFO - Saving final model...
+2025-05-09 22:41:09,243 - INFO - Done!
+2025-05-09 22:41:09,244 - INFO - SVM model saved to models/svm_model.pkl
+2025-05-09 22:41:09,244 - INFO - Loaded SVM model
+2025-05-09 22:41:09,244 - INFO - Loaded anomaly threshold: 0.01405923767015338
+2025-05-09 22:41:09,245 - INFO - Training ensemble model...
+2025-05-09 22:41:09,245 - ERROR - Error training ensemble model: main() got an unexpected keyword argument 'cnn_model'
